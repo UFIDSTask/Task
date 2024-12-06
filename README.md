@@ -44,7 +44,7 @@ Dataset Location: The CSV dataset, student_marks_dataset.csv, is included in the
 	df = pd.read_csv('student_marks_dataset.csv')
 
 ### Data Cleaning:
-	# Replace missing values using the mean:
+# Replace missing values using the mean:
 	df['column_name'] = df['column_name'].fillna(df['column_name'].mean())
 
 ### Drop rows with critical missing values:
