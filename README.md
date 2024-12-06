@@ -33,7 +33,7 @@ The following Python libraries are required to complete the lab:
 
 To install the required libraries, use:
 ---```bash
-pip install matplotlib pandas numpy
+	pip install matplotlib pandas numpy
 
 
 ## Instructions for Reading and Processing the CSV File
@@ -66,11 +66,11 @@ Dataset Location: The CSV dataset, student_marks_dataset.csv, is included in the
 
 ## Creating Visualizations:
 
-Example of a bar chart for grades:
-import matplotlib.pyplot as plt
-grade_counts = df['Grade'].value_counts()
-grade_counts.plot(kind='bar')
-plt.show()
+## Example of a bar chart for grades:
+	import matplotlib.pyplot as plt
+	grade_counts = df['Grade'].value_counts()
+	grade_counts.plot(kind='bar')
+	plt.show()
 
 
 ### Deliverables
