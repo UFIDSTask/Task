@@ -51,10 +51,10 @@ Dataset Location: The CSV dataset, student_marks_dataset.csv, is included in the
 	df = df.dropna(subset=['critical_column'])
 
 ### Data Transformation:
-    - Calculate total scores:
+# Calculate total scores:
 	df['Total Score'] = df[['score1', 'score2', 'score3']].sum(axis=1)
 
-    - Assign grades using conditional logic:
+# Assign grades using conditional logic:
 	def assign_grade(score):
 		if score >= 475:
 			return 'A'
@@ -64,7 +64,7 @@ Dataset Location: The CSV dataset, student_marks_dataset.csv, is included in the
 		df['Grade'] = df['Total Score'].apply(assign_grade)
 
 ## Creating Visualizations:
- - Example of a bar chart for grades:
+# Example of a bar chart for grades:
 	import matplotlib.pyplot as plt
 	grade_counts = df['Grade'].value_counts()
 	grade_counts.plot(kind='bar')
