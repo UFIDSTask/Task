@@ -36,7 +36,7 @@ To install the required libraries, use:
 pip install matplotlib pandas numpy
 
 
-### Instructions for Reading and Processing the CSV File
+## Instructions for Reading and Processing the CSV File
 Dataset Location: The CSV dataset, student_marks_dataset.csv, is included in the repository. Download it if working locally.
 
 - Loading the Dataset: Use Pandas to load the CSV:
@@ -73,7 +73,7 @@ Dataset Location: The CSV dataset, student_marks_dataset.csv, is included in the
 		plt.show()
 
 
-###Deliverables
+### Deliverables
 
 - A cleaned and transformed dataset (cleaned_student_marks.csv) saved after processing.
 - The following visualizations:
