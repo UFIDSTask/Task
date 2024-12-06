@@ -32,52 +32,52 @@ The following Python libraries are required to complete the lab:
 - **NumPy**: For numerical computations.
 
 To install the required libraries, use:
-```bash
+---```bash
 pip install matplotlib pandas numpy
 
 
 ## Instructions for Reading and Processing the CSV File
 Dataset Location: The CSV dataset, student_marks_dataset.csv, is included in the repository. Download it if working locally.
 
-- Loading the Dataset: Use Pandas to load the CSV:
+### Loading the Dataset: Use Pandas to load the CSV:
 	import pandas as pd
 	df = pd.read_csv('student_marks_dataset.csv')
 
-- Data Cleaning:
+### Data Cleaning:
 	Replace missing values using the mean:
 	df['column_name'] = df['column_name'].fillna(df['column_name'].mean())
 
-- Drop rows with critical missing values:
+### Drop rows with critical missing values:
 	df = df.dropna(subset=['critical_column'])
 
-- Data Transformation:
+### Data Transformation:
 
-	- Calculate total scores:
-		df['Total Score'] = df[['score1', 'score2', 'score3']].sum(axis=1)
+## Calculate total scores:
+	df['Total Score'] = df[['score1', 'score2', 'score3']].sum(axis=1)
 
-	- Assign grades using conditional logic:
-		def assign_grade(score):
-			if score >= 475:
-				return 'A'
-			elif score >= 450:
-				return 'A-'
-			...
-			df['Grade'] = df['Total Score'].apply(assign_grade)
+## Assign grades using conditional logic:
+	def assign_grade(score):
+		if score >= 475:
+			return 'A'
+		elif score >= 450:
+			return 'A-'
+		...
+		df['Grade'] = df['Total Score'].apply(assign_grade)
 
-- Creating Visualizations:
+## Creating Visualizations:
 
-	- Example of a bar chart for grades:
-		import matplotlib.pyplot as plt
-		grade_counts = df['Grade'].value_counts()
-		grade_counts.plot(kind='bar')
-		plt.show()
+Example of a bar chart for grades:
+import matplotlib.pyplot as plt
+grade_counts = df['Grade'].value_counts()
+grade_counts.plot(kind='bar')
+plt.show()
 
 
 ### Deliverables
 
-- A cleaned and transformed dataset (cleaned_student_marks.csv) saved after processing.
-- The following visualizations:
+1. A cleaned and transformed dataset (cleaned_student_marks.csv) saved after processing.
+2. The following visualizations:
 	Bar chart: Number of students by grade.
 	Histogram: Total score distribution.
 	Box plot: Percentage score distribution.
-- A Python script (main.py) with all code.
+3. A Python script (main.py) with all code.
