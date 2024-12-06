@@ -43,14 +43,14 @@ Dataset Location: The CSV dataset, student_marks_dataset.csv, is included in the
 	import pandas as pd
 	df = pd.read_csv('student_marks_dataset.csv')
 
-### Data Cleaning:
+## Data Cleaning:
 # Replace missing values using the mean:
 	df['column_name'] = df['column_name'].fillna(df['column_name'].mean())
 
 ### Drop rows with critical missing values:
 	df = df.dropna(subset=['critical_column'])
 
-### Data Transformation:
+## Data Transformation:
 # Calculate total scores:
 	df['Total Score'] = df[['score1', 'score2', 'score3']].sum(axis=1)
 
@@ -71,7 +71,7 @@ Dataset Location: The CSV dataset, student_marks_dataset.csv, is included in the
 	plt.show()
 
 
-### Deliverables
+# Deliverables
 1. A cleaned and transformed dataset (cleaned_student_marks.csv) saved after processing.
 2. The following visualizations:
 	- Bar chart: Number of students by grade.
