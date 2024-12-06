@@ -25,7 +25,7 @@ Students are required to:
    - Box plot of percentage scores.
 
 
-### Requirements
+## Requirements
 The following Python libraries are required to complete the lab:
 - **Matplotlib**: For visualizations.
 - **Pandas**: For data manipulation and cleaning.
@@ -44,17 +44,17 @@ Dataset Location: The CSV dataset, student_marks_dataset.csv, is included in the
 	df = pd.read_csv('student_marks_dataset.csv')
 
 ## Data Cleaning:
-# Replace missing values using the mean:
+### Replace missing values using the mean:
 	df['column_name'] = df['column_name'].fillna(df['column_name'].mean())
 
 ### Drop rows with critical missing values:
 	df = df.dropna(subset=['critical_column'])
 
 ## Data Transformation:
-# Calculate total scores:
+### Calculate total scores:
 	df['Total Score'] = df[['score1', 'score2', 'score3']].sum(axis=1)
 
-# Assign grades using conditional logic:
+### Assign grades using conditional logic:
 	def assign_grade(score):
 		if score >= 475:
 			return 'A'
@@ -64,7 +64,7 @@ Dataset Location: The CSV dataset, student_marks_dataset.csv, is included in the
 		df['Grade'] = df['Total Score'].apply(assign_grade)
 
 ## Creating Visualizations:
-# Example of a bar chart for grades:
+### Example of a bar chart for grades:
 	import matplotlib.pyplot as plt
 	grade_counts = df['Grade'].value_counts()
 	grade_counts.plot(kind='bar')
