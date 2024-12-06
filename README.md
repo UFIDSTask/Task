@@ -74,7 +74,6 @@ Dataset Location: The CSV dataset, student_marks_dataset.csv, is included in the
 
 
 ### Deliverables
-
 1. A cleaned and transformed dataset (cleaned_student_marks.csv) saved after processing.
 2. The following visualizations:
 	Bar chart: Number of students by grade.
