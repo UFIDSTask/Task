@@ -76,7 +76,7 @@ Dataset Location: The CSV dataset, student_marks_dataset.csv, is included in the
 ### Deliverables
 1. A cleaned and transformed dataset (cleaned_student_marks.csv) saved after processing.
 2. The following visualizations:
-	Bar chart: Number of students by grade.
-	Histogram: Total score distribution.
-	Box plot: Percentage score distribution.
+	- Bar chart: Number of students by grade.
+	- Histogram: Total score distribution.
+	- Box plot: Percentage score distribution.
 3. A Python script (main.py) with all code.
