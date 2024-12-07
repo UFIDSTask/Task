@@ -27,3 +27,12 @@ jobs:
 
       - name: Run Tests
         run: python test_script.py
+        
+      - name: Upload Visualizations
+        uses: actions/upload-artifact@v2
+        with:
+          name: visualizations
+          path: |
+            students_by_grade.png
+            total_score_distribution.png
+            percentage_score_distribution.png
